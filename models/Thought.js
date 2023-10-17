@@ -52,3 +52,15 @@ const thoughtSchema = new Schema(
         id: false,
     }
 );
+
+thoughtSchema.virtual('reactionsCount').get(function () {
+    return this.reactions.length;
+});
+
+thoughtSchema.virtual('formatDate').get(function () {
+    return this.createdAt.toDateString();
+});
+
+const Thought = model('thought', thoughtSchema);
+
+module.exports = Thought;
