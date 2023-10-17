@@ -22,7 +22,7 @@
 
 // This will not be a model, but rather will be used as the `reaction` field's subdocument schema in the `Thought` model.
 
-const {Schema, model} = require('mongoose');
+const {Schema, Types} = require('mongoose');
 
 const reactionSchema = new Schema(
     {
@@ -58,6 +58,4 @@ reactionSchema.virtual('formatDate').get(function () {
     return this.createdAt.toDateString();
 });
 
-const Reaction = model('reaction', reactionSchema);
-
-module.exports = Reaction;
+module.exports = reactionSchema;
