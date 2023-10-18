@@ -98,8 +98,6 @@ async deleteThought(req, res) {
 // **`/api/thoughts/:thoughtId/reactions`**
 // * `POST` to create a reaction stored in a single thought's `reactions` array field
 async addReaction(req, res) {
-    console.log('You are adding a reaction');
-    console.log(req.body);
 
     try {
       const thought = await Thought.findOneAndUpdate(

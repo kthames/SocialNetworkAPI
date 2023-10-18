@@ -88,9 +88,6 @@ module.exports = {
     // **`/api/users/:userId/friends/:friendId`**
     // * `POST` to add a new friend to a user's friend list
     async addFriend(req, res) {
-        console.log('You are adding a friend');
-        console.log(req.body);
-    
         try {
           const user = await User.findOneAndUpdate(
             { _id: req.params.userId },
