@@ -6,7 +6,7 @@
 
  [Social Network API](https://github.com/kthames/SocialNetworkAPI)
 
-[Walkthrough Video of the Social Network API](https://drive.google.com/file/d/1VILw4v13hi6SZoDofsj5FmzM5S2lZKMX/view)
+[Walkthrough Video of the Social Network API]()
 
 ## Installation
 
@@ -28,8 +28,11 @@ Create a `.env` file with the following variable:
 After you have created a connection to your MongoDb Atlas server you can start your application by running the following command in the terminal: 
 
 ```md
-npm i
+npm start
 ```
+
+By utilizing [Insomnia](https://insomnia.rest/) you can perform CRUD operations within this API.
+
 
 
 
