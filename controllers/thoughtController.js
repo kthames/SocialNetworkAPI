@@ -84,6 +84,13 @@ async updateThought(req, res) {
 async deleteThought(req, res) {
     try {
       const thought = await Thought.findOneAndDelete({ _id: req.params.thoughtId });
+      const thoughtId = (thought._id).toString();
+
+      const user = await User.findOneAndUpdate(
+        { _id: req.body.userId},
+        { $pull: { thoughts: thoughtId} },
+        { runValidators: true, new: true }
+      );
 
       if (!thought) {
         return res.status(404).json({ message: 'No thought with that ID' });

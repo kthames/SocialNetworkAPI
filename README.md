@@ -1,12 +1,10 @@
 # SocialNetworkAPI
 
-# EmployeeTracker
- 
  This application utilizes Node.js, Express, Mongoose, MongoDB, to create an API for a basic social network structure. 
 
  [Social Network API](https://github.com/kthames/SocialNetworkAPI)
 
-[Walkthrough Video of the Social Network API]()
+[Walkthrough Video of the Social Network API](https://drive.google.com/file/d/1UHm-SysZqpK6sGfwgpT-RIJ5GyvrHH1o/view)
 
 ## Installation
 
@@ -33,6 +31,9 @@ npm start
 
 By utilizing [Insomnia](https://insomnia.rest/) you can perform CRUD operations within this API.
 
+## Author 
+
+Katherine Thames [Github](https://github.com/kthames)
 
 
 
